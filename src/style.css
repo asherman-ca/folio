@@ -1,345 +1,407 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+[class*="entypo-"]:before {  font-family: 'entypo', sans-serif;}
 
-header:after,
-nav:after,
-footer:after,
-.module-block:after,
-.gallery:after,
-.social:after {
-  content: ".";
-  display: block;
-	height: 0;
-	clear: both;
-	visibility: hidden;
-}
-
-
-* {
-	/* Universal reset: */
-	margin:0;
-	padding:0;
-}
-
-
+* { margin:0; padding:0;}
 body {
-	font-size: 16px;
-	line-height: 1.5;
-	font-family: 'Josefin Sans', sans-serif;
-	color: #272727;
-	background: rgb(247,251,252);
-	background: -moz-linear-gradient(top,  rgba(247,251,252,1) 0%, rgba(217,237,242,1) 40%, rgba(173,217,228,1) 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(247,251,252,1)), color-stop(40%,rgba(217,237,242,1)), color-stop(100%,rgba(173,217,228,1)));
-	background: -webkit-linear-gradient(top,  rgba(247,251,252,1) 0%,rgba(217,237,242,1) 40%,rgba(173,217,228,1) 100%);
-	background: -o-linear-gradient(top,  rgba(247,251,252,1) 0%,rgba(217,237,242,1) 40%,rgba(173,217,228,1) 100%);
-	background: -ms-linear-gradient(top,  rgba(247,251,252,1) 0%,rgba(217,237,242,1) 40%,rgba(173,217,228,1) 100%);
-	background: linear-gradient(top,  rgba(247,251,252,1) 0%,rgba(217,237,242,1) 40%,rgba(173,217,228,1) 100%);
+  background: url('http://i.imgur.com/uNSAd3p.png');
+  
+  font-family: 'Roboto Slab', serif;     
+  font-weight:300;
+  color:#333;
 }
-
-header, footer, article, section, nav, {
-	/* Giving a display value to the HTML5 rendered elements: */
-	display:block;
-}
-
-img { 
-	border-radius: 100%; 
-	max-width: 100%; 
-	display: block;
-}
-
-a {
-	color:#D24655;
-	text-decoration:none;
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
-}
-
-a:hover, a:focus { /* when you declare a hover state, make sure you declare a focus state as well */
-	color: #000;
-}
-
-a img {
-	border:none;
-}
-
-
-h1 {
-	font-size: 50px;
- 	margin: 0;
-	color: #000;
-	font-weight: normal; 
-	line-height: 1;
-}
+a { text-decoration:none; color:#F4f4f4;}
+a:hover, a:active { color:#FFF;}
+ul, li { list-style:none; }
+.hide { display:none;}
 
 h2 {
-	font-size: 24px;
-	letter-spacing:2px;
-	text-transform: uppercase;
-	font-weight: normal; 
-	margin: 0 0 24px; 
-	line-height: 1;
+  text-shadow: 2px 2px 0px #f4f4f4, 4px 4px 0px rgba(30, 30, 30, 0.2);}
+  font-size:24px;
+  margin:2px 8px;
+  border-radius:8px;
+  padding:0 8px;
 }
 
+h2:hover, h2:active { color:red;}
 
-h3 {
-	font-size: 30px;
-	font-weight: normal; 
-	margin: 0 0 24px; 
-	line-height: 1;
+.navbar .centerHolder {
+  width:768px;
+  position:relative;
+  left:50%;
+  margin-left:-384px;
 }
+@media all and (min-width: 0) and (max-width: 639px) {
+  .navbar {
+    position:fixed;
+    height:auto;
+    width:640px;
+    min-width:320px;
+  }
+  .navbar li.logo a {
+    padding-left:50px;
+  }
+  .navbar li, .navbar li a, .navbar li.blog a, .navbar li.design a, .navbar li.illustration a, .navbar li.hireme a {
+    display:none;
+  }
+  .navbar a .dropdown.entypo-plus-circled {
+    left:275px;
+    display:block;
 
-p {
-	font-family: 'Vollkorn', serif;
-	margin-bottom: 24px;
+    -webkit-transition: all 0.15s ease-in-out;
+       -moz-transition: all 0.15s ease-in-out;
+        -ms-transition: all 0.15s ease-in-out;
+         -o-transition: all 0.15s ease-in-out;
+            transition: all 0.15s ease-in-out;
+  }
+  .navbar a .dropdown.entypo-plus-circled.active {
+    transform:rotate(45deg);
+    -webkit-transform:rotate(-45deg);
+  }
+  .dropdown.menu {
+    position:fixed;
+    width:100%;
+  }
+  .dropdown.menu li {
+    display:block;
+    text-align:center;
+    background-color:#C71F3C;
+    border-bottom:1px solid #e34;
+    height:30px;
+  }
+  .dropdown.menu li a{
+    line-height:30px;
+  }
+  .dropdown.menu li.active {
+    background-color:#f4f4f4;
+  }
+  .dropdown.menu li.active a {
+    color:#C71F3C;
+  }
 }
-
-
-
-/*-------------------------------------------
-
-    	Header
--------------------------------------------*/
-header { margin: 20px 40px 60px; }
-
-header div { 
-	margin-top: 40px; 
-	width: 60%; 
-	float: left; 
+@media all and (min-width: 640px) and (max-width: 1023px) {
+  .navbar {
+    position:fixed;
+    height:auto;
+    width:1024px;
+    min-width:640px;
+  }
+  .navbar li, .navbar li a, .navbar li.blog a, .navbar li.design a, .navbar li.illustration a {
+    display:none;
+  }
+  .navbar a .dropdown.entypo-plus-circled {
+    left:425px;
+    display:block;
+  }
+   .dropdown.menu {
+    position:fixed;
+    width:100%;
+  }
+  .dropdown.menu li {
+    display:block;
+    text-align:center;
+    background-color:#C71F3C;
+    border-bottom:1px solid #e34;
+    height:30px;
+  }
+  .dropdown.menu li a{
+    line-height:30px;
+  }
+  .dropdown.menu li.active {
+    background-color:#f4f4f4;
+  }
+  .dropdown.menu li.active a {
+    color:#C71F3C;
+  }
+  .dropdown.menu .hireme {
+    display:none;
+  }
 }
-
-header p { 
-	color: #272727; 
-	font-size: 18px;
-	margin: 0;
-	font-family: 'Josefin Sans', sans-serif;
+@media all and (min-width: 1024px) {
+  .navbar {
+    position:fixed;
+    height:auto;
+    width:100%;
+    min-width:768px;
+  }
+  .navbar a .dropdown.entypo-plus-circled {
+    display:none;
+  }
 }
-
-nav { 
-	float: right; 
-	width: 40%;
+.navbar {
+  background-color:#e34;
+  color:#f4f4f4;
+  box-shadow:0px 25px 50px #f4f4f4, inset 0px -3px 0px #c71f3c;
+  padding:20px;
+  overflow:hidden;
+  z-index:1;
 }
-
-
-nav ul { float: right; }
-
-nav li {
-	float: left;
-	list-style: none;
-	padding: 4px 0;
+.navbar li, .navbar li a { display:inline;}
+.navbar li { padding:20px 0; margin:0 }
+.navbar li a { padding:20px 30px; font-weight:400;}
+.navbar li a:hover {
+  position:relative;
+  top:-1px;
+  color:#e34;
+  background-color:#f4f4f4;
+  box-shadow: 0px 2px 0px #b1b1b1, inset 0px -1px 0px #b1b1b1;
+  transition:0.2s;
 }
-
-nav a {
-	color:#565656;
-	display: block;
-	font-size:12px;
-	margin:5px 2px;
-	padding:10px 10px 8px;
-	text-transform:uppercase;
-	font-weight: bold;
-	letter-spacing: 1px;
-	border-right: 1px dashed rgba(0, 0, 0, .3);
+.navbar .logo {
+  font-family:'Lily Script One', cursive;
+  font-size:60px;
+  line-height:0px;
+  position:relative;
+  top:14px;
 }
-
-nav li:last-child a { border-right: none; }
-
-
-nav a:hover, nav a:focus {
-	text-decoration:none;
-	background-color:#f0f0f0;
-	border-color: transparent;
+.navbar li.logo a:hover {  text-shadow: 0px 3px 0px #c71f3c;}
+.navbar li.hireme a{
+  position:relative;
+  top:-1px;
+  color:#e34;
+  background-color:#f4f4f4;
+  box-shadow: 0px 2px 0px #b1b1b1;
+  font-weight:700;
+  font-size:18px;
+  text-transform:uppercase;
+  text-decoration:underline;
 }
-
-
-/*-------------------------------------------
-
-    	Footer
--------------------------------------------*/
-
-footer {
-	padding: 40px;
-	background: #fff;
+.navbar li.hireme a:hover {
+  background-color:#f65353;
+  color:#f4f4f4;
+  text-shadow:0px 1px 0px #c71f3c;
+  box-shadow:0px 0px 0px transparent, inset 0px -1px 0px #c71f3c;
 }
+.navbar li.blog a:active, .navbar li.design a:active, .navbar li.illustration a:active, .navbar li.hireme a:active {
+  top:-1px;
+  border-top:4px solid #333;
+  border-bottom:1px solid #999;
 
-.col { 
-	float: left;
-	width: 21%;
-	margin: 0 5% 40px 0;
+  -webkit-transition:none;
+     -moz-transition:none;
+      -ms-transition:none;
+       -o-transition:none;
+          transition:none;
 }
+.navbar li a.active, .navbar li.hireme a.active {
+  background-color:#f4f4f4;
+  color:#e34;
+  text-shadow:0px 1px 0px #c71f3c;
+  top:-1px;
+  border-top:4px solid #333;
 
-.col:last-of-type { 
-	margin-right: 0;
+  -webkit-transition:none;
+     -moz-transition:none;
+      -ms-transition:none;
+       -o-transition:none;
+          transition:none;
 }
-
-footer h2 { font-size: 18px; margin-bottom: 40px;}
-
-footer h3 { 
-	margin-bottom: 10px;
-	padding-bottom: 10px;
-	border-bottom: 1px dashed rgba(0,0,0,.3);
-	font-size: 18px;
+.navbar li a.active:hover {
+  top:0px;
+  color:#c71f3c;
 }
-
-footer  ul {
-	margin-left: 20px;
+.navbar li a.active:active {
+  top:1px;
+  color:#c71f3c;
+  border-top:5px solid #333;
 }
+.navbar li.hireme a.active { border-bottom:none; box-shadow:none; top:2px;}
+.navbar li.hireme a:active { border-bottom: 1px solid #c71f3c; }
+.navbar a .dropdown.entypo-plus-circled {
+  color:#f8adb4;
+  font-size:24px;
+  line-height:0;
+  position:absolute;
+  padding:24px 14px;
+  top:-12px;
 
-footer  li { 
-	color: rgba(0,0,0,.1); /* border color */
-}
-
-footer a { font-size: 14px; }
-
-footer p {
-	margin-bottom: 0;
-	clear: both;
-	font-family: 'Josefin Sans', sans-serif;
-	text-align: center;
-}
-
-.up {
-	margin-top: 50px; 
-}
-
-.up a { 
-	background: rgba(0, 0, 0, .25);
-	font-size: 30px;
-	padding: 12px 10px;
-	border-radius: 10px;
-	text-shadow: 1px 1px 2px #fff;
-}
-
-.up a:hover, .up a:focus { 
-	color: rgba(0, 0, 0, .45);
-	text-decoration: none;
-
-}
-
-
-
-/*-------------------------------------------
-
-    	ABOUT
--------------------------------------------*/
-
-img.right {
-	float: right;
-	margin: 0 0 20px 20px;
-}
-
-.social li { 
-	float: left;
-	list-style: none;
-}
-
-
-.social a { 
-	display: block;
-	font-size:12px;
-	margin:5px 2px;
-	padding:10px 10px 8px;
-	text-transform:uppercase;
-	font-weight: bold;
-	letter-spacing: 1px;
-	border-right: 1px dashed rgba(0, 0, 0, .1); 
-}
-
-.social li:last-child a { border: none; }
-
-
-
-/*-------------------------------------------
-
-    	Posts
--------------------------------------------*/
-
-.post { 
-	position: relative;
-	margin-bottom: 50px;
-	padding-left: 24%;
-}
-
-.post h3 { 
-	margin-bottom: 10px;
-}
-
-.post img { 
-	width: 20%; 
-	position: absolute;
-	left: 0;
-	top: 0;
-	border-radius: 0;
-}
-
-.date { 
-	display: block; 
-	margin-bottom: 10px; 
-}
-
-
-/*-------------------------------------------
-
-    	Gallery
--------------------------------------------*/
-
-.gallery li {
-	float: left;
-	list-style: none;
-	width: 21%;
-	margin: 0 5.3333% 20px 0;
-}
-
-.gallery li:nth-child(4n) {
-	margin-right: 0;
-}
-
-.gallery a {
- 	display: block;	
-}
-
-.gallery a img { 
-  -webkit-transition: all 0.5s ease-in-out; 
-     -moz-transition: all 0.5s ease-in-out; 
-      -ms-transition: all 0.5s ease-in-out; 
-       -o-transition: all 0.5s ease-in-out; 
+  -webkit-transition: all 0.5s ease-in-out;
+     -moz-transition: all 0.5s ease-in-out;
+      -ms-transition: all 0.5s ease-in-out;
+       -o-transition: all 0.5s ease-in-out;
           transition: all 0.5s ease-in-out;
-
+}
+.navbar a .dropdown.entypo-plus-circled.active {
+    -webkit-transform:rotate(-405deg);
+      -moz- transform:rotate(-405deg);
+       -ms- transform:rotate(-405deg);
+        -o- transform:rotate(-405deg);
+            transform:rotate(-405deg);
+ }
+.navbar a .dropdown.entypo-plus-circled:hover, .navbar a .dropdown.entypo-plus-circled:active {
+  color:#fff;
+}
+.dropdown.menu li.active {
+  background-color:#f4f4f4;
+  color:#C71F3C;
 }
 
-.gallery a:hover img, .gallery a:focus img { 
-	-webkit-transform: scale(1.1);  /* Saf3.1+, Chrome */
-     -moz-transform: scale(1.1);  /* FF3.5+ */
-      -ms-transform: scale(1.1);  /* IE9 */
-       -o-transform: scale(1.1);  /* Opera 10.5+ */
-          transform: scale(1.1);
+section {
+  height:100%;
+  width:100%;
+  text-align:center;
 }
-
-
-
-/*-------------------------------------------
-
-    	General
--------------------------------------------*/
-
-
-.page_wrap {
-	max-width:960px;
-	padding: 0 20px; 
-	margin:0 auto;  
+section a {  color:#e34; border-bottom:1px dashed; }
+section a:hover, section a:active { color:#be2836; }
+section.intro, section.design, section.illustration, section.about {
+  position:relative;
+  top:60px;
+  height:90%;
 }
-
-
-.module-block {
-	background-color: #fff;
-	margin:0 0 070px 0;
-	padding: 40px;
-	-webkit-box-shadow: inset 0px 0px 13px rgba(68, 68, 68, 0.1); 
-	-moz-box-shadow: inset 0px 0px 13px rgba(68, 68, 68, 0.1); 
-	box-shadow: inset 0px 0px 13px rgba(68, 68, 68, 0.1);
-	border: 1px solid rgba(0, 0, 0, .1);
+.intro .contentArea, .about .contentArea {
+  width:550px;
+  margin-left:-225px;
+  margin-top:200px;
+  position:absolute;;
+  left:50%;
+  height:auto;
 }
-
-.module-block h2 { 
-	padding-bottom: 30px;
-	margin-bottom: 30px;
-	border-bottom: 1px dashed rgba(0,0,0,.3);
+.about .contentArea {
+  margin-top:60px;
 }
+.intro h1, .design h1, .illustration h1, .about h1 {
+  font-size:48px;
+  margin-bottom:12px;
+  text-shadow: 2px 2px 0px #f4f4f4, 4px 4px 0px rgba(30, 30, 30, 0.2);}
+.intro .social { margin: 12px 0; }
+.intro .social li {
+  display:inline;
+  font-size:24px;
+  margin:2px 8px;
+  border-radius:8px;
+  padding:0 8px;
+}
+.intro .social a {   border-bottom:none;}
+.intro .social a .entypo-twitter {  color:#00ACEE;}
+.intro .social a .entypo-twitter:hover {  color:#FFF; background-color:#00ACEE;}
+.intro .social a .entypo-tumblr {  color:#2C4762;}
+.intro .social a .entypo-tumblr:hover {  color:#FFF; background-color:#2C4762;}
+.intro .social a .entypo-code {  color:#333;}
+.intro .social a .entypo-code:hover {  color:#FFF; background-color:#333;}
+.intro .social a .entypo-dribbble {  color:#E54785;}
+.intro .social a .entypo-dribbble:hover {  color:#FFF; background-color:#E54785;}
+.intro .social a .entypo-linkedin {  color:#0177B5;}
+.intro .social a .entypo-linkedin:hover {  color:#FFF; background-color:#0177B5;}
+
+section.design, section.illustration, section.about {
+  position:absolute;
+  top:-4000px;
+}
+.about .contentArea p {
+  margin:24px 0;
+}
+@media all and (min-width: 320px) and (max-width: 639px) {
+  .design h1, .illustration h1 {
+    font-size:36px;
+  }
+  .design .contentArea, .illustration .contentArea {
+    width:245px;
+    margin-left:-122px;
+    position:absolute;
+    left:50%;
+  }
+}
+@media all and (min-width: 640px) and (max-width: 1023px) {
+  .design .contentArea, .illustration .contentArea {
+    width:510px;
+    margin-left:-260px;
+    position:absolute;
+    left:50%;
+  }
+}
+@media all and (min-width: 1024px) and (max-width: 1439px) {
+  .design .contentArea, .illustration .contentArea {
+    width:1024px;
+    margin-left:-512px;
+    position:absolute;
+    left:50%;
+  }
+}
+@media all and (min-width: 1440px) and (max-width: 1919px) {
+  .design .contentArea, .illustration .contentArea {
+    width:1260px;
+    margin-left:-630px;
+    position:absolute;
+    left:50%;
+  }
+}
+@media all and (min-width: 1920px)and (max-width: 2560px) {
+  .design .contentArea, .illustration .contentArea {
+    width:1760px;
+    margin-left:-880px;
+    position:absolute;
+    left:50%;
+  }
+}
+.thumbs li {
+  background-color:#e34;
+  height:200px;
+  width:225px;
+  display:inline-block;
+  float:left;
+  position:relative;
+  margin:12px;
+  border:1px solid #F4F4F4;
+  box-shadow: 0px 10px 20px rgba(30, 30, 30, 0.5);
+  overflow:hidden;
+
+  -webkit-transition: all 0.15s ease-in-out;
+     -moz-transition: all 0.15s ease-in-out;
+      -ms-transition: all 0.15s ease-in-out;
+       -o-transition: all 0.15s ease-in-out;
+          transition: all 0.15s ease-in-out;
+}
+.thumbs li:hover {
+  top:-12px;
+  box-shadow: 0px 22px 35px rgba(30, 30, 30, 0.35);
+}
+.thumbs a { border-bottom:none; }
+.thumbs a > li:before  {
+  background-color:#c71f3c;
+  color:#FFF;
+  opacity:0.8;
+  position:absolute;
+  left:0;
+  height:200px;
+  width:225px;
+  content:'';
+  top:-200px;
+
+  -webkit-transition: all 0.3s ease-in-out;
+     -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+       -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+}
+.thumbs li > img {
+  width:100%;
+  height:auto;
+}
+.thumbs a:hover > li:before {  top:0;}
+
+/* Design Thumbs desc */
+.thumbs a > li.stickMaker:before { content:'Web app created to help mock up artwork modifications on commercial arcade stick gaming peripherals made my companies like Madcatz and Razer. HTML, CSS, jQuery. Personal project, 2013. '; }
+.thumbs a > li.metaphor:before { content:'Web app, created by Metaphor.com Inc, on which I worked as a Front-End Developer from 2012-2013.'; }
+.thumbs a > li.keith:before { content:'Artist portfolio site for Illustrator and Comic book artist, Keith Pakiz. Based on tumblr to be updated by him at his request. Commissioned by Keith Pakiz. HTML, CSS and jQuery. 2013'; }
+.thumbs a > li.jessi:before { content:'Artist portfolio site for Illustrator Jessi Zabarsky, built to be responsive to different resolutions/devices. HTML, CSS and jQuery. 2013'; }
+.thumbs a > li.crowdPunch:before { content:'Character designs for a video game about people attending a Metal concert. Drawn with Pencil. 2012'; }
+.thumbs a > li.nanoISS:before { content:'Package design for the Nanoblock® International Space Station\'s release in the United States as distributed by the Ohio Art Company. Made in Illustrator using source material from Kawada Co. Ltd. 2011. Images © The Ohio Art Company 2011'; }
+.thumbs a > li.nanoShuttle:before { content:'Package design for the Nanoblock® Deluxe Space Shuttle\'s release in the United States as distributed by the Ohio Art Company. Made in Illustrator using source material from Kawada Co. Ltd. 2011. Images © The Ohio Art Company 2011'; }
+.thumbs a > li.sandzini2:before { content:'Product design for Sandzini™ Create-a-Creature produced and distributed by the Ohio Art Company. Made in Illustrator 2011. Package Design was contracted out. Images © The Ohio Art Company 2012'; }
+.thumbs a > li.sandzini:before { content:'Product design for Sandzini™ Create-a-Creature produced and distributed by the Ohio Art Company. Made in Illustrator 2011. Package Design was contracted out. Images © The Ohio Art Company 2012'; }
+
+
+/* Illustration Thumbs desc */
+.thumbs li.mmBosses > img,  .thumbs li.kingz > img, .thumbs li.crowdPunch > img { width:auto; height: 100%; }
+.thumbs a > li.mmBosses:before { content:'Fun illustration of Capcom\'s Megaman characters. Drawn in a Moleskine sketchbook with Micron pens. 2013'; }
+.thumbs a > li.redCyclone:before { content:'Sketchbook page of Zangief from the Street Fighter series. Drawn with Micron pens. 2013'; }
+.thumbs a > li.gief:before { content:'An illustration of Zangief from the Street Fighter series. Drawn in Photoshop. 2012'; }
+.thumbs a > li.monarch:before { content:'An illustration done as part of a group theme at drawedgoods.com - our favorite uniforms. Drawn in Photoshop. 2012'; }
+.thumbs a > li.gaga:before { content:'My take on a fun outfit Lady Gaga might wear. Based on the Pokémon series\'s Starmie. Drawn in Photoshop. 2012'; }
+.thumbs a > li.dudley:before { content:'Vector drawing of Dudley from the Street Fighter series. Drawn entirely in Illustrator. 2012'; }
+.thumbs a > li.kingz:before { content:'Spot Illustration done for the Super Kingz comic, Issue #1 by Scott McMahon. Drawn in Photoshop. 2012. The Super Kingz are © Scott McMahon and Corey Barba'; }
+.thumbs a > li.selfPortrait:before { content:'Self Portrait. Drawn in Photoshop. 2012'; }
+.thumbs a > li.sweetPotato:before { content:'Short comic about my love for sweet potatoes. Drawn in pencil. 2012'; }
+.thumbs a > li.cut:before { content:'A short animated .gif depicting Cutman from the Megaman series doing what he does best. Animated in Photoshop. 2012'; }
+.thumbs a > li.ice:before { content:'Iceman from the Megaman series enjoying an Otterpop. Animated in Photoshop. 2012'; }
+.thumbs a > li.spiderman:before { content:'My take on Reed Black\'s Hipster Spiderman drawings. Drawn in Photoshop. 2012'; }
+.thumbs a > li.cornerGrill:before { content:'A Digital Painting from my BFA thesis series. Drawn in Photoshop. 2010'; }
