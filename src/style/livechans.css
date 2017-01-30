@@ -1,0 +1,51 @@
+.livechans {
+    width: 50%;
+    min-width: 960px;
+    margin: 0 auto;
+    /*margin-left: 25%;*/
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.livechans .carousel {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    background: none;
+}
+
+.livechan-item {
+    width: 33.333%;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.livechan-item img {
+    height: 175px;
+    width: 100%;
+}
+
+.livechan-item p {
+    font-size: 14px;
+    width: 100%;
+    padding-top: 5px;
+    font-family: sans-serif;
+}
+
+.livechan-item p:nth-child(2){
+    padding-top: 10px;
+}
+
+.livechan-item p:nth-child(3){
+    opacity: .6;
+}

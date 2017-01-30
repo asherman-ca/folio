@@ -1,0 +1,29 @@
+.maintron {
+    height: 510px;
+    background-image: url("https://static-cdn.jtvnw.net/ttv-platforms/background-art/404_backgroundart.jpg");
+    background-size: cover;
+    width: 100%;
+    min-width: 980px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bigscreen {
+    width: 50%;
+    min-width: 960px;
+    height: 60%;
+    margin-left: 10px;
+}
+
+.carousel {
+    width: 50%;
+    min-width: 960px;
+    height: 20%;
+    display: flex;
+}
+
+.maintron-item {
+    width: 16.666%;
+}

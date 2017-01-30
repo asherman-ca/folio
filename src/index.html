@@ -1,62 +1,223 @@
-<head>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<!--Optional theme-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-<!--custom CSS-->
-<link rel="stylesheet" href="style.css"/>
-</head>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Twitch</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style/global.css">
+        <link rel="stylesheet" href="./style/reset.css">
+        <link rel="stylesheet" href="./style/nav.css">
+        <link rel="stylesheet" href="./style/maintron.css">
+        <link rel="stylesheet" href="./style/feed.css">
+        <link rel="stylesheet" href="./style/footer.css">
+        <link rel="stylesheet" href="./style/livechans.css">
+        <link rel="icon" type="image/xicon" href="./pics/xicon.png">
+        <script type="text/javascript" src="./extras/jquery.min.1.7.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </head>
+    <body>
+         <div class="nav">
+            <div class="navtop">
+                <img src="http://res.cloudinary.com/devwor0u0/image/upload/v1485816331/Twitch_logo_qr2zu2.svg" alt="./pics/Twitch_logo.svg">
+                <!-- <img src="./pics/Twitch_logo.svg"> -->
+                <div class="search">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span><p>Search</p>
+                </div>
+                <div class="navtop-right">
+                    <p>Browse</p><p>Try Twitch Prime</p><p>|</p><p>Frodan<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></p><p>Following</p>
+                </div>
+            </div>
 
-<body>
-<script src="jayess.js"></script>
+            <div class="navbottom">
+                <div class="navbottom-content">
+                    <div class="left-text">
+                        <p>Twitch Prime</p><p>Free loot every month, exclusive discount on new-release games, ad-free viewing, and loads more.</p>
+                    </div>
 
-<link href='http://fonts.googleapis.com/css?family=Lily+Script+One|Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
+                    <div class="right-text">
+                      <p>Start 30-day Free Trial</p>
+                    </div>
+                </div>
+            </div>
+         </div>
 
-<div class="navbar">
-  <div class="centerHolder">
-    <ul>
-      <li class="logo">
-        <a href="javascript:void(0)">a.sherman</a>
-      </li>
-      <li class="blog">
-        <a href="javascript:void(0)" target="_blank">blog</a>
-      </li>
-      <li class="design">
-        <a href="javascript:void(0)">github</a>
-      </li>
-      <li class="hireme">
-        <a href="javascript:void(0)">hire me!</a>
-      </li>   
-    </ul>
-  </div>
-</div>
+         <div class="maintron">
+             <div class="bigscreen">
+                 <img src="http://res.cloudinary.com/devwor0u0/image/upload/v1485756085/maintron-main_wwfz7b.png" alt="./pics/maintron-main.png">
+                 <!-- <img src="./pics/maintron-main.png" alt=""> -->
+             </div>
+             <div class="carousel">
+                 <div class="maintron-item">
+                    <img src="http://res.cloudinary.com/devwor0u0/image/upload/v1485757946/btm-1_zgkour.png" alt="./pics/btm-1.png">
+                    <!-- <img src="./pics/btm-1.png" alt=""> -->
+                 </div>
+                 <div class="maintron-item">
+                     <img src="http://res.cloudinary.com/devwor0u0/image/upload/v1485758124/btm-2_uf23id.png" alt="./pics/btm-2.png">
+                     <!-- <img src="./pics/btm-2.png" alt=""> -->
+                 </div>
+                 <div class="maintron-item">
+                     <img src="http://res.cloudinary.com/devwor0u0/image/upload/v1485758150/btm-3_ea25mq.png" alt="./pics/btm-3.png">
+                     <!-- <img src="./pics/btm-3.png" alt=""> -->
+                 </div>
+                 <div class="maintron-item">
+                     <img src="http://res.cloudinary.com/devwor0u0/image/upload/v1485758151/btm-4_tdifit.png" alt="./pics/btm-4.png">
+                     <!-- <img src="./pics/btm-4.png" alt=""> -->
+                 </div>
+                 <div class="maintron-item">
+                     <img src="http://res.cloudinary.com/devwor0u0/image/upload/v1485758151/btm-5_opzwfi.png" alt="./pics/btm-5.png">
+                     <!-- <img src="./pics/btm-5.png" alt=""> -->
+                 </div>
+                 <div class="maintron-item">
+                     <img src="http://res.cloudinary.com/devwor0u0/image/upload/v1485758151/btm-6_yctpf3.png" alt="./pics/btm-6.png">
+                     <!-- <img src="./pics/btm-6.png" alt=""> -->
+                 </div>
+             </div>
+         </div>
 
-<section class="intro">
-  <div class="contentArea">
-    <h1>Hi, I'm <a href="javascript:void(0)">Alex Sherman</a>.</h1>
-    <p>I'm a <a href="javascript:void(0)">web developer</a> currently living in <a href="javascript:void(0)">San Francisco</a>.</p>
-    <p>My applications follow three principles:</p>
-      <hr>
-      <h2><strong>Attractive Design</strong></h2>
-      <p>Every application is attractive, unique and tailored to suit your needs and requirements.</p>
-      <hr>
-      <h2><strong>Clean Code</strong></h2>
-      <p>All applications are written in valid and clean HTML5 / CSS3 &amp; JavaScript.</p>
-      <hr>
-      <h2><strong>Always Responsive</strong></h2>
-      <p>All sites are responsive. They will look great on desktop, tablets and mobile devices.</p>
-      <hr>
-<!--
-  <div class="social">
-    <ul>
-      <a href="http://www.twitter.com/e_kubli"><li class="entypo-twitter"></li></a>
-      <a href="http://ekubli.tumblr.com"><li class="entypo-tumblr"></li></a>
-      <a href="http://codepen.io/ekubli"><li class="entypo-code"></li></a>
-      <a href="http://dribbble.com/ekubli"><li class="entypo-dribbble"></li></a>
-      <a href="http://www.linkedin.com/pub/eric-kubli/1b/858/314/"><li class="entypo-linkedin"></li></a>
-    </ul>
-  </div>
--->
-  </div>    
-  </section>
-     
-</body>
+         <div class="feed">
+             <div class="top-text">
+                 <h1>Featured Games</h1><p>Games people are watching now</p>
+             </div>
+
+             <div class="carousel">
+                <div class="featured-game league">
+                  <img src="http://res.cloudinary.com/devwor0u0/image/upload/v1485816331/League_of_Legends-272x380_ta1lrv.jpg" alt="./pics/League of Legends-272x380.jpg">
+                    <!-- <img src="./pics/League of Legends-272x380.jpg"> -->
+                    <p>League of Legends</p>
+                    <p>101,088 viewers</p>
+                </div>
+                <div class="featured-game king">
+                  <img src="http://res.cloudinary.com/devwor0u0/image/upload/v1485816330/H1Z1-_King_of_the_Kill-272x380_jhrana.jpg" alt="./pics/H1Z1- King of the Kill-272x380.jpg">
+                    <!-- <img src="./pics/H1Z1- King of the Kill-272x380.jpg"> -->
+                    <p>H1Z1: King of the Kill</p>
+                    <p>58,523 viewers</p>
+                </div>
+                <div class="featured-game dota">
+                    <img src="http://res.cloudinary.com/devwor0u0/image/upload/v1485816331/Dota_2-272x380_cnn16t.png" alt="./pics/Dota 2-272x380.jpg">
+                    <!-- <img src="./pics/Dota 2-272x380.jpg"> -->
+                    <p>Dota 2</p>
+                    <p>41,124 viewers</p>
+                </div>
+                <div class="featured-game hearthstone">
+                    <img src="http://res.cloudinary.com/devwor0u0/image/upload/v1485816330/Hearthstone-272x380_gjuyqt.jpg" alt="./pics/Hearthstone-272x380.jpg">
+                    <!-- <img src="./pics/Hearthstone-272x380.jpg"> -->
+                    <p>Hearthstone</p>
+                    <p>35,575 viewers</p>
+                </div>
+                <div class="featured-game overwatch">
+                    <img src="http://res.cloudinary.com/devwor0u0/image/upload/v1485816487/Overwatch-272x380_qggx2a.jpg" alt="./pics/Overwatch-272x380.jpg">
+                    <!-- <img src="./pics/Overwatch-272x380.jpg"> -->
+                    <p>Overwatch</p>
+                    <p>35,547 viewers</p>
+                </div>
+                <div class="featured-game cod">
+                    <img src="http://res.cloudinary.com/devwor0u0/image/upload/v1485816330/Call_of_Duty-_Infinite_Warfare-272x380_b15gci.jpg" alt="./pics/Call of Duty- Infinite Warfare-272x380.jpg">
+                    <!-- <img src="./pics/Call of Duty- Infinite Warfare-272x380.jpg"> -->
+                    <p>Call of Duty: Infinite...</p>
+                    <p>32,826 viewers</p>
+                </div>
+                <div class="featured-game counter">
+                    <img src="http://res.cloudinary.com/devwor0u0/image/upload/v1485816330/Counter-Strike-_Global_Offensive-272x380_jvz5qf.jpg" alt="./pics/Counter-Strike- Global Offensive-272x380.jpg">
+                    <!-- <img src="./pics/Counter-Strike- Global Offensive-272x380.jpg"> -->
+                    <p>Counter-Strike: Glo...</p>
+                    <p>21,491 viewers</p>
+                </div>
+                <div class="featured-game resident">
+                    <img src="http://res.cloudinary.com/devwor0u0/image/upload/v1485816487/Resident_Evil_7_biohazard-272x380_zfljsn.jpg" alt="./pics/Resident Evil 7 biohazard-272x380.jpg">
+                    <!-- <img src="./pics/Resident Evil 7 biohazard-272x380.jpg"> -->
+                    <p>Resident Evil 7 bioh...</p>
+                    <p>20,391 viewers</p>
+                </div>
+                <div class="featured-game runescape">
+                    <img src="http://res.cloudinary.com/devwor0u0/image/upload/v1485816487/RuneScape-272x380_ff7qnl.jpg" alt="./pics/RuneScape-272x380.jpg">
+                    <!-- <img src="./pics/RuneScape-272x380.jpg"> -->
+                    <p>RuneScape</p>
+                    <p>13,060 viewers</p>
+                </div>
+                <div class="featured-game destiny">
+                    <img src="http://res.cloudinary.com/devwor0u0/image/upload/v1485816331/Destiny-272x380_dkriuo.png" alt="./pics/Destiny-272x380.jpg">
+                    <!-- <img src="./pics/Destiny-272x380.jpg"> -->
+                    <p>Destiny</p>
+                    <p>12,860 viewers</p>
+                </div>
+                <div class="featured-game warcraft">
+                    <img src="http://res.cloudinary.com/devwor0u0/image/upload/v1485816487/World_of_Warcraft-272x380_wvwkkx.jpg" alt="./pics/World of Warcraft-272x380.jpg">
+                    <!-- <img src="./pics/World of Warcraft-272x380.jpg"> -->
+                    <p>World of Warcraft</p>
+                    <p>12,630 viewers</p>
+                </div>
+                <div class="featured-game poker">
+                    <img src="http://res.cloudinary.com/devwor0u0/image/upload/v1485816488/Poker-272x380_mahcss.jpg" alt="./pics/Poker-272x380.jpg">
+                    <!-- <img src="./pics/Poker-272x380.jpg"> -->
+                    <p>Poker</p>
+                    <p>11,269 viewers</p>
+                </div>
+             </div>
+
+             <div class="bottom-text">
+                 <p>See all live Games  >></p>
+             </div>
+         </div>
+
+         <div class="footer">
+             <img src="http://res.cloudinary.com/devwor0u0/image/upload/v1485816331/panel-87877723-image-79d6ac56184bc578-320-320_tf4his.png" alt="./pics/panel-87877723-image-79d6ac56184bc578-320-320.png">
+             <!-- <img src="./pics/panel-87877723-image-79d6ac56184bc578-320-320.png"> -->
+             <div class="footer-text">
+                 <p>Free in-game loot every month, plus surprises</p>
+                 <p>Ad-free viewing, free channel subscription, chat badge and exclusive emotes</p>
+                 <p>Start 30-day Free Trial</p>
+             </div>
+         </div>
+
+         <div class="livechans">
+            <div class="top-text">
+                <h1>Top Live Channels</h1><p>Broadcasters people are watching now</p>
+            </div>
+
+            <div class="carousel">
+                <div class="livechan-item">
+                    <img src="http://res.cloudinary.com/devwor0u0/image/upload/v1485758718/livechans1_wvulij.jpg" alt="./pics/livechans1.jpg">
+                    <!-- <img src="./pics/livechans1.jpg" alt=""> -->
+                    <p>Some lovely soloq before bed</p>
+                    <p>30,997 viewers on TSM_Bjergsen</p>
+                </div>
+                <div class="livechan-item">
+                    <img src="http://res.cloudinary.com/devwor0u0/image/upload/v1485758718/livechans2_g2fpry.jpg" alt="./pics/livechans2.jpg">
+                    <!-- <img src="./pics/livechans2.jpg" alt=""> -->
+                    <p>TSM Kripp ARENA & Stuffs</p>
+                    <p>26,041 viewers on nl_Kripp</p>
+                </div>
+                <div class="livechan-item">
+                    <img src="http://res.cloudinary.com/devwor0u0/image/upload/v1485758718/livechans3_i4tgex.jpg" alt="./pics/livechans3.jpg">
+                    <!-- <img src="./pics/livechans3.jpg" alt=""> -->
+                    <p>2k w/ OG | Finals</p>
+                    <p>19,861 viewers on scrump</p>
+                </div>
+                <div class="livechan-item">
+                    <img src="http://res.cloudinary.com/devwor0u0/image/upload/v1485758718/livechans4_qakckh.jpg" alt="./pics/livechans4.jpg">
+                    <!-- <img src="./pics/livechans4.jpg" alt=""> -->
+                    <p>dota 2</p>
+                    <p>17,274 viewers on Arteezy</p>
+                </div>
+                <div class="livechan-item">
+                    <img src="http://res.cloudinary.com/devwor0u0/image/upload/v1485758718/livechans5_sktr1q.jpg" alt="./pics/livechans5.jpg">
+                    <!-- <img src="./pics/livechans5.jpg" alt=""> -->
+                    <p>Super Smash Sundays 55 Main Stream - Sin...</p>
+                    <p>13,612 viewers on TeamOXY</p>
+                </div>
+                <div class="livechan-item">
+                    <img src="http://res.cloudinary.com/devwor0u0/image/upload/v1485758718/livechans6_okyav7.jpg" alt="./pics/livechans6.jpg">
+                    <!-- <img src="./pics/livechans6.jpg" alt=""> -->
+                    <p>nothing but net</p>
+                    <p>10,410 viewers on C9Sneaky</p>
+                </div>
+
+            </div>
+
+
+            <div class="bottom-text">
+                <p>See all live Channels >></p>
+            </div>
+         </div>
+    </body>
+</html>
