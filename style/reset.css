@@ -1,0 +1,13 @@
+html, body, header, nav, h1, a,
+ul, li, strong, main, button, i,
+section, img, div, h2, p, form, 
+label, input, textarea, span, article,
+footer, time, h3, h4{
+    margin: 0;
+    padding: 0;
+    border: none; 
+    font: inherit;
+    font-family: inherit;
+    color: inherit;
+    display: inherit;
+}
